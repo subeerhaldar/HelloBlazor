@@ -1,22 +1,25 @@
 using BlazorBasics.Areas.Identity;
 using HelloBlazor.Data;
+using HelloBlazor.Hubs;
 using HelloBlazor.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.AzureAppServices;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using System;
+using System.Linq;
 using System.Net.Http;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Logging.AzureAppServices;
-
-using Microsoft.AspNetCore.Authentication;
 
 namespace HelloBlazor
 {
@@ -66,19 +69,22 @@ namespace HelloBlazor
 
             services.Configure<AzureFileLoggerOptions>(Configuration.GetSection("AzureLogging"));
 
-            //services.AddCors(policy =>
-            //{
-            //    policy.AddPolicy("CorsPolicy", opt => opt
-            //        .WithOrigins("https://localhost:5001")
-            //        .AllowAnyHeader()
-            //        .AllowAnyMethod()
-            //        .AllowCredentials());
-            //});
+            services.AddResponseCompression(opts =>
+            {
+                opts.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(
+                    new[] { "application/octet-stream" });
+            });
+
+            services.AddHttpContextAccessor();
+            services.TryAddSingleton<IActionContextAccessor, ActionContextAccessor>();
+            //services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
+            app.UseResponseCompression();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -99,6 +105,7 @@ namespace HelloBlazor
             {
                 endpoints.MapControllers();
                 endpoints.MapBlazorHub();
+                endpoints.MapHub<ChatHub>("/chathub");
                 endpoints.MapFallbackToPage("/_Host");
             });
 
