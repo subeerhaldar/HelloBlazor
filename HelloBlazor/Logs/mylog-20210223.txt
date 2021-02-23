@@ -1,0 +1,262 @@
+2021-02-23T00:22:20.7547466+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-23T00:22:20.7627353+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-23T00:22:20.7629343+05:30  [INF] Content root path: "D:\Code\HelloBlazor\HelloBlazor" (b5d60022)
+2021-02-23T00:22:22.2042184+05:30 8000001a-1802-0f00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Cannot create a DbSet for 'HelloBlazorUser' because this type is not included in the model for the context.
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_Finder()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserOnlyStore`6.FindByIdAsync(String userId, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByIdAsync(String userId)
+   at Microsoft.AspNetCore.Identity.UserManager`1.GetUserAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-02-23T00:22:55.5451374+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-23T00:22:55.5511456+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-23T00:22:55.5513133+05:30  [INF] Content root path: "D:\Code\HelloBlazor\HelloBlazor" (b5d60022)
+2021-02-23T00:23:01.9813997+05:30 80000079-1001-f200-b63f-84710c7967bb [INF] Log message in the Get() method (895ec9da)
+2021-02-23T00:23:01.9848480+05:30 80000079-1001-f200-b63f-84710c7967bb [WRN] Azure log message from Get() method (838b0024)
+2021-02-23T01:19:02.6459879+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-23T01:19:02.6833909+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-23T01:19:02.6836137+05:30  [INF] Content root path: "D:\Code\HelloBlazor\HelloBlazor" (b5d60022)
+2021-02-23T01:19:09.9018303+05:30 80000080-2803-0400-b63f-84710c7967bb [INF] Log message in the Get() method (895ec9da)
+2021-02-23T01:19:09.9062229+05:30 80000080-2803-0400-b63f-84710c7967bb [WRN] Azure log message from Get() method (838b0024)
+2021-02-23T01:25:32.8829422+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-23T01:25:32.8901156+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-23T01:25:32.8903095+05:30  [INF] Content root path: "D:\Code\HelloBlazor\HelloBlazor" (b5d60022)
+2021-02-23T01:25:36.1980151+05:30 80000024-0801-1700-b63f-84710c7967bb [INF] Log message in the Get() method (895ec9da)
+2021-02-23T01:25:36.2015648+05:30 80000024-0801-1700-b63f-84710c7967bb [WRN] Azure log message from Get() method (838b0024)
+2021-02-23T01:26:03.1469915+05:30 80000025-0801-1700-b63f-84710c7967bb [INF] Log message in the Get() method (895ec9da)
+2021-02-23T01:26:03.1473507+05:30 80000025-0801-1700-b63f-84710c7967bb [WRN] Azure log message from Get() method (838b0024)
+2021-02-23T01:27:04.8167802+05:30 80000026-0801-1700-b63f-84710c7967bb [INF] Log message in the Get() method (895ec9da)
+2021-02-23T01:27:04.8170933+05:30 80000026-0801-1700-b63f-84710c7967bb [WRN] Azure log message from Get() method (838b0024)
+2021-02-23T01:28:02.4289731+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-23T01:28:02.4385329+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-23T01:28:02.4387510+05:30  [INF] Content root path: "D:\Code\HelloBlazor\HelloBlazor" (b5d60022)
+2021-02-23T01:28:05.8528308+05:30 80000031-1802-1200-b63f-84710c7967bb [INF] Log message in the Get() method (895ec9da)
+2021-02-23T01:28:05.8569051+05:30 80000031-1802-1200-b63f-84710c7967bb [WRN] Azure log message from Get() method (838b0024)
+2021-02-23T01:28:06.2099415+05:30 8000001e-1800-9f00-b63f-84710c7967bb [WRN] Unhandled exception rendering component: "Could not find 'ChartJsInterop' in 'window'.
+Error: Could not find 'ChartJsInterop' in 'window'.
+    at https://localhost:44352/_framework/blazor.server.js:8:30944
+    at Array.forEach (<anonymous>)
+    at p (https://localhost:44352/_framework/blazor.server.js:8:30904)
+    at https://localhost:44352/_framework/blazor.server.js:8:31614
+    at new Promise (<anonymous>)
+    at e.beginInvokeJSFromDotNet (https://localhost:44352/_framework/blazor.server.js:8:31587)
+    at https://localhost:44352/_framework/blazor.server.js:1:20052
+    at Array.forEach (<anonymous>)
+    at e.invokeClientMethod (https://localhost:44352/_framework/blazor.server.js:1:20022)
+    at e.processIncomingData (https://localhost:44352/_framework/blazor.server.js:1:18006)" (e3f9387d)
+Microsoft.JSInterop.JSException: Could not find 'ChartJsInterop' in 'window'.
+Error: Could not find 'ChartJsInterop' in 'window'.
+    at https://localhost:44352/_framework/blazor.server.js:8:30944
+    at Array.forEach (<anonymous>)
+    at p (https://localhost:44352/_framework/blazor.server.js:8:30904)
+    at https://localhost:44352/_framework/blazor.server.js:8:31614
+    at new Promise (<anonymous>)
+    at e.beginInvokeJSFromDotNet (https://localhost:44352/_framework/blazor.server.js:8:31587)
+    at https://localhost:44352/_framework/blazor.server.js:1:20052
+    at Array.forEach (<anonymous>)
+    at e.invokeClientMethod (https://localhost:44352/_framework/blazor.server.js:1:20022)
+    at e.processIncomingData (https://localhost:44352/_framework/blazor.server.js:1:18006)
+   at Microsoft.JSInterop.JSRuntime.InvokeWithDefaultCancellation[T](String identifier, Object[] args)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle)
+2021-02-23T01:28:06.2337538+05:30 8000001e-1800-9f00-b63f-84710c7967bb [ERR] Unhandled exception in circuit '"ShtRFjITnVp15hSC4ivHsVnXdAslAVq2D-K0n8Saf1s"'. (47be2d5d)
+Microsoft.JSInterop.JSException: Could not find 'ChartJsInterop' in 'window'.
+Error: Could not find 'ChartJsInterop' in 'window'.
+    at https://localhost:44352/_framework/blazor.server.js:8:30944
+    at Array.forEach (<anonymous>)
+    at p (https://localhost:44352/_framework/blazor.server.js:8:30904)
+    at https://localhost:44352/_framework/blazor.server.js:8:31614
+    at new Promise (<anonymous>)
+    at e.beginInvokeJSFromDotNet (https://localhost:44352/_framework/blazor.server.js:8:31587)
+    at https://localhost:44352/_framework/blazor.server.js:1:20052
+    at Array.forEach (<anonymous>)
+    at e.invokeClientMethod (https://localhost:44352/_framework/blazor.server.js:1:20022)
+    at e.processIncomingData (https://localhost:44352/_framework/blazor.server.js:1:18006)
+   at Microsoft.JSInterop.JSRuntime.InvokeWithDefaultCancellation[T](String identifier, Object[] args)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle)
+2021-02-23T01:28:08.6780654+05:30 8000005a-2003-e000-b63f-84710c7967bb [INF] Log message in the Get() method (895ec9da)
+2021-02-23T01:28:08.6782831+05:30 8000005a-2003-e000-b63f-84710c7967bb [WRN] Azure log message from Get() method (838b0024)
+2021-02-23T01:28:12.4502834+05:30 80000032-0801-1700-b63f-84710c7967bb [INF] Log message in the Get() method (895ec9da)
+2021-02-23T01:28:12.4505360+05:30 80000032-0801-1700-b63f-84710c7967bb [WRN] Azure log message from Get() method (838b0024)
+2021-02-23T01:28:12.5180565+05:30 80000064-2003-e000-b63f-84710c7967bb [WRN] Unhandled exception rendering component: "Could not find 'ChartJsInterop' in 'window'.
+Error: Could not find 'ChartJsInterop' in 'window'.
+    at https://localhost:44352/_framework/blazor.server.js:8:30944
+    at Array.forEach (<anonymous>)
+    at p (https://localhost:44352/_framework/blazor.server.js:8:30904)
+    at https://localhost:44352/_framework/blazor.server.js:8:31614
+    at new Promise (<anonymous>)
+    at e.beginInvokeJSFromDotNet (https://localhost:44352/_framework/blazor.server.js:8:31587)
+    at https://localhost:44352/_framework/blazor.server.js:1:20052
+    at Array.forEach (<anonymous>)
+    at e.invokeClientMethod (https://localhost:44352/_framework/blazor.server.js:1:20022)
+    at e.processIncomingData (https://localhost:44352/_framework/blazor.server.js:1:18006)" (e3f9387d)
+Microsoft.JSInterop.JSException: Could not find 'ChartJsInterop' in 'window'.
+Error: Could not find 'ChartJsInterop' in 'window'.
+    at https://localhost:44352/_framework/blazor.server.js:8:30944
+    at Array.forEach (<anonymous>)
+    at p (https://localhost:44352/_framework/blazor.server.js:8:30904)
+    at https://localhost:44352/_framework/blazor.server.js:8:31614
+    at new Promise (<anonymous>)
+    at e.beginInvokeJSFromDotNet (https://localhost:44352/_framework/blazor.server.js:8:31587)
+    at https://localhost:44352/_framework/blazor.server.js:1:20052
+    at Array.forEach (<anonymous>)
+    at e.invokeClientMethod (https://localhost:44352/_framework/blazor.server.js:1:20022)
+    at e.processIncomingData (https://localhost:44352/_framework/blazor.server.js:1:18006)
+   at Microsoft.JSInterop.JSRuntime.InvokeWithDefaultCancellation[T](String identifier, Object[] args)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle)
+2021-02-23T01:28:12.5186746+05:30 80000064-2003-e000-b63f-84710c7967bb [ERR] Unhandled exception in circuit '"a4Wt3anKPoKHtbtLY2VO_LfH4ldYpNxRJImllZK4d9k"'. (47be2d5d)
+Microsoft.JSInterop.JSException: Could not find 'ChartJsInterop' in 'window'.
+Error: Could not find 'ChartJsInterop' in 'window'.
+    at https://localhost:44352/_framework/blazor.server.js:8:30944
+    at Array.forEach (<anonymous>)
+    at p (https://localhost:44352/_framework/blazor.server.js:8:30904)
+    at https://localhost:44352/_framework/blazor.server.js:8:31614
+    at new Promise (<anonymous>)
+    at e.beginInvokeJSFromDotNet (https://localhost:44352/_framework/blazor.server.js:8:31587)
+    at https://localhost:44352/_framework/blazor.server.js:1:20052
+    at Array.forEach (<anonymous>)
+    at e.invokeClientMethod (https://localhost:44352/_framework/blazor.server.js:1:20022)
+    at e.processIncomingData (https://localhost:44352/_framework/blazor.server.js:1:18006)
+   at Microsoft.JSInterop.JSRuntime.InvokeWithDefaultCancellation[T](String identifier, Object[] args)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle)
+2021-02-23T01:31:07.6953504+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-23T01:31:07.7062570+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-23T01:31:07.7064658+05:30  [INF] Content root path: "D:\Code\HelloBlazor\HelloBlazor" (b5d60022)
+2021-02-23T01:31:10.7746069+05:30 80000016-2002-db00-b63f-84710c7967bb [INF] Log message in the Get() method (895ec9da)
+2021-02-23T01:31:10.7789976+05:30 80000016-2002-db00-b63f-84710c7967bb [WRN] Azure log message from Get() method (838b0024)
+2021-02-23T01:31:11.2519129+05:30 8000001b-0801-3c00-b63f-84710c7967bb [WRN] Unhandled exception rendering component: "Could not find 'ChartJsInterop' in 'window'.
+Error: Could not find 'ChartJsInterop' in 'window'.
+    at https://localhost:44352/_framework/blazor.server.js:8:30944
+    at Array.forEach (<anonymous>)
+    at p (https://localhost:44352/_framework/blazor.server.js:8:30904)
+    at https://localhost:44352/_framework/blazor.server.js:8:31614
+    at new Promise (<anonymous>)
+    at e.beginInvokeJSFromDotNet (https://localhost:44352/_framework/blazor.server.js:8:31587)
+    at https://localhost:44352/_framework/blazor.server.js:1:20052
+    at Array.forEach (<anonymous>)
+    at e.invokeClientMethod (https://localhost:44352/_framework/blazor.server.js:1:20022)
+    at e.processIncomingData (https://localhost:44352/_framework/blazor.server.js:1:18006)" (e3f9387d)
+Microsoft.JSInterop.JSException: Could not find 'ChartJsInterop' in 'window'.
+Error: Could not find 'ChartJsInterop' in 'window'.
+    at https://localhost:44352/_framework/blazor.server.js:8:30944
+    at Array.forEach (<anonymous>)
+    at p (https://localhost:44352/_framework/blazor.server.js:8:30904)
+    at https://localhost:44352/_framework/blazor.server.js:8:31614
+    at new Promise (<anonymous>)
+    at e.beginInvokeJSFromDotNet (https://localhost:44352/_framework/blazor.server.js:8:31587)
+    at https://localhost:44352/_framework/blazor.server.js:1:20052
+    at Array.forEach (<anonymous>)
+    at e.invokeClientMethod (https://localhost:44352/_framework/blazor.server.js:1:20022)
+    at e.processIncomingData (https://localhost:44352/_framework/blazor.server.js:1:18006)
+   at Microsoft.JSInterop.JSRuntime.InvokeWithDefaultCancellation[T](String identifier, Object[] args)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle)
+2021-02-23T01:31:11.2762637+05:30 8000001b-0801-3c00-b63f-84710c7967bb [ERR] Unhandled exception in circuit '"ZRRaijZeU9gmonsLAD8lt2KqyhaZWlD396JwWblC5IA"'. (47be2d5d)
+Microsoft.JSInterop.JSException: Could not find 'ChartJsInterop' in 'window'.
+Error: Could not find 'ChartJsInterop' in 'window'.
+    at https://localhost:44352/_framework/blazor.server.js:8:30944
+    at Array.forEach (<anonymous>)
+    at p (https://localhost:44352/_framework/blazor.server.js:8:30904)
+    at https://localhost:44352/_framework/blazor.server.js:8:31614
+    at new Promise (<anonymous>)
+    at e.beginInvokeJSFromDotNet (https://localhost:44352/_framework/blazor.server.js:8:31587)
+    at https://localhost:44352/_framework/blazor.server.js:1:20052
+    at Array.forEach (<anonymous>)
+    at e.invokeClientMethod (https://localhost:44352/_framework/blazor.server.js:1:20022)
+    at e.processIncomingData (https://localhost:44352/_framework/blazor.server.js:1:18006)
+   at Microsoft.JSInterop.JSRuntime.InvokeWithDefaultCancellation[T](String identifier, Object[] args)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.GetErrorHandledTask(Task taskToHandle)
+2021-02-23T01:35:07.1332670+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-23T01:35:07.1454632+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-23T01:35:07.1462088+05:30  [INF] Content root path: "D:\Code\HelloBlazor\HelloBlazor" (b5d60022)
+2021-02-23T01:35:09.7567228+05:30 80000053-2803-5600-b63f-84710c7967bb [INF] Log message in the Get() method (895ec9da)
+2021-02-23T01:35:09.7616278+05:30 80000053-2803-5600-b63f-84710c7967bb [WRN] Azure log message from Get() method (838b0024)
+2021-02-23T01:38:05.1844211+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-23T01:38:05.1943210+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-23T01:38:05.1945070+05:30  [INF] Content root path: "D:\Code\HelloBlazor\HelloBlazor" (b5d60022)
+2021-02-23T01:38:08.5667169+05:30 80000020-2803-4800-b63f-84710c7967bb [INF] Log message in the Get() method (895ec9da)
+2021-02-23T01:38:08.5700515+05:30 80000020-2803-4800-b63f-84710c7967bb [WRN] Azure log message from Get() method (838b0024)
+2021-02-23T01:39:02.1664661+05:30 80000021-2803-4800-b63f-84710c7967bb [INF] Log message in the Get() method (895ec9da)
+2021-02-23T01:39:02.1667887+05:30 80000021-2803-4800-b63f-84710c7967bb [WRN] Azure log message from Get() method (838b0024)
+2021-02-23T08:39:06.7990757+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-23T08:39:06.8090032+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-23T08:39:06.8092132+05:30  [INF] Content root path: "D:\Code\HelloBlazor\HelloBlazor" (b5d60022)
+2021-02-23T08:39:10.3957050+05:30 80000002-0000-fd00-b63f-84710c7967bb [ERR] An error occurred using the connection to database '"HelloBlazorDb"' on server '"tcp:helloblazordbserver.database.windows.net,1433"'. (5fc3407c)
+2021-02-23T08:39:10.5327292+05:30 80000002-0000-fd00-b63f-84710c7967bb [ERR] An exception occurred while iterating over the results of a query for context type '"HelloBlazor.Models.AppDbContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open server 'helloblazordbserver' requested by the login. Client with IP address '45.250.227.131' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CheckPoolBlockingPeriod(Exception e)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:71e020ed-000c-45a1-9848-824f55eb3099
+Error Number:40615,State:1,Class:14" (f5c7ac34)
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open server 'helloblazordbserver' requested by the login. Client with IP address '45.250.227.131' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CheckPoolBlockingPeriod(Exception e)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:71e020ed-000c-45a1-9848-824f55eb3099
+Error Number:40615,State:1,Class:14
+2021-02-23T08:39:10.5687091+05:30 80000002-0000-fd00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open server 'helloblazordbserver' requested by the login. Client with IP address '45.250.227.131' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CheckPoolBlockingPeriod(Exception e)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:71e020ed-000c-45a1-9848-824f55eb3099
+Error Number:40615,State:1,Class:14
+2021-02-23T08:39:47.2490800+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-23T08:39:47.2579919+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-23T08:39:47.2582360+05:30  [INF] Content root path: "D:\Code\HelloBlazor\HelloBlazor" (b5d60022)
+2021-02-23T16:25:14.1839332+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-23T16:25:14.1924251+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-23T16:25:14.1926505+05:30  [INF] Content root path: "D:\Code\HelloBlazor\HelloBlazor" (b5d60022)
+2021-02-23T16:25:44.6266408+05:30 80000008-0003-fd00-b63f-84710c7967bb [INF] Log message in the Get() method (895ec9da)
+2021-02-23T16:25:44.6313890+05:30 80000008-0003-fd00-b63f-84710c7967bb [WRN] Azure log message from Get() method (838b0024)
+2021-02-23T16:31:16.6301943+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2021-02-23T16:31:16.6370874+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2021-02-23T16:31:16.6373945+05:30  [INF] Content root path: "D:\Code\HelloBlazor\HelloBlazor" (b5d60022)
+2021-02-23T16:31:20.6636310+05:30 80000009-0003-fe00-b63f-84710c7967bb [INF] Log message in the Get() method (895ec9da)
+2021-02-23T16:31:20.6674291+05:30 80000009-0003-fe00-b63f-84710c7967bb [WRN] Azure log message from Get() method (838b0024)
