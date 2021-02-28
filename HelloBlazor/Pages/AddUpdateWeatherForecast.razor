@@ -1,6 +1,7 @@
 ﻿@page "/addupdate"
 @page "/addupdate/{Id}"
 @inherits AddUpdateWeatherForecastBase
+@attribute [Authorize]
 
 <h3>AddUpdateWeatherForecast</h3>
 
@@ -33,7 +34,7 @@
 
             <button type="submit" class="btn btn-primary edit-btn">Save Weather</button>
             <a class="btn btn-outline-primary edit-outline-btn" @onclick="@NavigateToOverview">Cancel</a>
-            
+
             @if (WeatherForecast.Id > 0)
             {
                 <a class="btn btn-danger" @onclick="@DeleteEmployee">

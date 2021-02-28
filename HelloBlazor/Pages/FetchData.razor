@@ -1,6 +1,5 @@
 ﻿@page "/fetchdata"
 @inherits FetchDataBase
-@attribute [Authorize]
 
 <Chart Config="_config"></Chart>
 
@@ -29,21 +28,6 @@ else
             </tr>
         </thead>
         <tbody>
-            @*@foreach (var forecast in forecasts)
-                    {
-                        <tr>
-                            <td>@forecast.Date.ToShortDateString()</td>
-                            <td>@forecast.TemperatureC</td>
-                            <td>@forecast.TemperatureF</td>
-                            <td>@forecast.Summary</td>
-                        </tr>
-                    }
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>*@
             @foreach (var forecast in weatherForecasts)
             {
                 <tr>

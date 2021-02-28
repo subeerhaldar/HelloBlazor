@@ -4,6 +4,7 @@
 @inject NavigationManager NavigationManager
 @implements IAsyncDisposable
 @inject IHttpContextAccessor httpContextAccessor
+@attribute [Authorize]
 
 <div class="form-group">
     <label for="Date" class="col-sm-3">User: </label>
